@@ -1,0 +1,41 @@
+* {
+    background-color: aliceblue;
+    color: #2d3748;
+}
+
+.mainContent {
+    width: 75%;
+    margin: 0 auto; 
+    display: block; 
+    text-align: center; 
+}
+
+#scramble {
+    font-family: 'Courier New', monospace;
+}
+
+#timerDisplay {
+    font-size: 600%;
+    padding-top: 20%;
+}
+
+.memo {
+    margin: 7% auto;
+}
+
+#memoInput {
+    display: block;
+    margin: 0 auto;
+}
+
+#memoDisplay, #memoInput {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.p5Canvas {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
