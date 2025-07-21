@@ -1,5 +1,8 @@
+body {
+    background-color: #b9d9f8;
+}
+
 * {
-    background-color: aliceblue;
     color: #2d3748;
 }
 
@@ -24,6 +27,7 @@
 }
 
 #memoInput {
+    background: transparent !important;
     display: block;
     margin: 0 auto;
 }
@@ -39,3 +43,15 @@
     bottom: 0px;
 }
 
+#memoIndicator {
+    color: #7fa3c4;
+    position: absolute;
+    font-size: 12rem; /* Make it very large */
+    z-index: -1; /* Put it behind other content */
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center it perfectly */
+    opacity: 0.3; /* Make it more subtle/transparent */
+    font-weight: bold;
+    pointer-events: none; /* Prevent it from interfering with clicks */
+}

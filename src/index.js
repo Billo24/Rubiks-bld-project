@@ -26,6 +26,7 @@ let stage = 0;
 let timerDisplay = document.getElementById("timerDisplay")
 let memoInput = document.getElementById("memoInput")
 let memoDisplay = document.getElementById("memoDisplay")
+let memoIndicator = document.getElementById("memoIndicator")
 
 window.setup = function(){
     createCanvas(400, 400);
@@ -50,6 +51,7 @@ function stopTimer() {
       stage = 1;
       memoInput.style.display = "block";
       memoDisplay.style.display = "block";
+      updateMemoIndicator();
       
     }else if(stage == 1){
     //get new scramble and reload dom element
@@ -59,7 +61,16 @@ function stopTimer() {
     window.maincube = new cube();
     window.maincube.executeAlg(scramble);
     stage = 0;
+    updateMemoIndicator();
     }
+    }
+}
+
+function updateMemoIndicator() {
+    if(stage == 0){
+        memoIndicator.innerHTML = "MEMO";
+    } else if(stage == 1){
+        memoIndicator.innerHTML = "EXEC";
     }
 }
 
