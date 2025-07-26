@@ -175,6 +175,7 @@ memoInput.addEventListener("keydown", function(event) {
           memoDisplay.style = "color: red"
         }
         
+        memoInput.blur();
         console.log("edgeMemo = " + edgeMemo + " cornerMemo = " + cornerMemo)
         memoDisplay.style.display = "block";
       }
